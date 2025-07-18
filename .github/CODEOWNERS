@@ -1,0 +1,4 @@
+# CODEOWNERS for Plasmode
+/core/ @core-team
+/modules/ @module-team
+/docs/ @docs-team

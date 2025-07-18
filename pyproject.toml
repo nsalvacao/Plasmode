@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.pylint.main]
+load-plugins = ["pylint.extensions.docparams", "pylint.extensions.bad_builtin"]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = []
+
+[tool.pylint.basic]
+docstring-min-length = 10
+
+[tool.pylint.format]
+max-line-length = 88
