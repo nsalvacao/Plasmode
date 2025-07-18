@@ -26,6 +26,10 @@ All notable changes to this project will be documented in this file. This projec
 - Placeholder for future updates
 - [AI-Agent: ai.github.codex] Initialized project structure, CI workflows, example module, tests, and .gitignore (2025-07-18)
 - [AI-Agent: ai.github.codex] Added linter configs, release automation, dependabot, onboarding docs and AI test templates (2025-07-18)
+- [AI-Agent: ai.github.codex] Added pylint and globals dependencies for linting (2025-07-18)
+
+### Changed
+- [AI-Agent: ai.github.codex] Migrated ESLint to flat config and updated security workflow checkout (2025-07-18)
 
 ### Fixed
 - [CI/CD-Agent: github-actions-bot] Workflow permissions and ESLint config adjustments (2025-07-18)
