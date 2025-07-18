@@ -1,18 +1,18 @@
----
-title: "README – PLASMODE Universal Desktop Modules Platform"
-version: "v1.0"
-date_created: 2025-07-18
-last_updated: 2025-07-18
-node: ["ModelingNode"]
-purpose: ["Public entrypoint and onboarding for PLASMODE contributors, module developers, and end users. Ready for international collaboration."]
-origin: ["Canvas"]
-reusable: true
-status: "active"
-dependencies: ["Blueprint – Desktop Modules Platform - PLASMODE.md", "PLASMODE - Platform Technical Architecture.md", "PLASMODE - Platform Shell UX_UI Specification.md", "PLASMODE - Module SDK & API Reference.md"]
-tags: ["README", "onboarding", "international", "AI integration", "modules", "tauri", ".net", "sdk", "overlay", "architecture"]
-scope: "global"
-privacy: "public"
----
+<details>
+<summary><strong>Metadata</strong></summary>
+
+| Field         | Value                                                      |
+|---------------|------------------------------------------------------------|
+| **Title**     | README – PLASMODE Universal Desktop Modules Platform       |
+| **Version**   | v1.0                                                       |
+| **Created**   | 2025-07-18                                                 |
+| **Updated**   | 2025-07-18                                                 |
+| **Node**      | ModelingNode                                               |
+| **Scope**     | Global                                                     |
+| **Status**    | Active                                                     |
+
+</details>
+
 
 # PLASMODE – Universal Desktop Modules Platform
 
