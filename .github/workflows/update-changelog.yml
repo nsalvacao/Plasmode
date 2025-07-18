@@ -1,0 +1,28 @@
+name: Update Changelog
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+jobs:
+  changelog:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate changelog
+        run: |
+          npx github-changelog-generator -o CHANGELOG.md
+      - name: Tag AI entries
+        run: |
+          if git log -1 --pretty=%B | grep -iq "\bAI\b\|bot"; then
+            echo "\n### AI/agent contribution" >> CHANGELOG.md
+          fi
+      - name: Commit changelog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          git commit -m "docs(changelog): update for PR #${{ github.event.pull_request.number }}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

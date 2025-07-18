@@ -124,6 +124,7 @@ PLASMODE is designed for seamless AI augmentation, automation, and agent integra
 - All changes must be documented and tested.
 - Respect the permissions/security model.
 - Review the [CONTRIBUTING.md] and [CODE_OF_CONDUCT.md].
+- New contributors should follow the [Onboarding Checklist](docs/onboarding_checklist.md).
 - Use [Discussions] for design or community proposals.
 
 ---

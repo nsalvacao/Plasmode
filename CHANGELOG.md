@@ -25,6 +25,7 @@ All notable changes to this project will be documented in this file. This projec
 - Initial creation of CHANGELOG.md
 - Placeholder for future updates
 - [AI-Agent: ai.github.codex] Initialized project structure, CI workflows, example module, tests, and .gitignore (2025-07-18)
+- [AI-Agent: ai.github.codex] Added linter configs, release automation, dependabot, onboarding docs and AI test templates (2025-07-18)
 
 ---
 

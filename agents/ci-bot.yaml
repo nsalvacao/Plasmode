@@ -1,0 +1,10 @@
+id: ai.github.com.ci-bot
+type: automation
+owner: Nuno Salvacao <nexo-modeling@outlook.com>
+description: "Runs CI tests and workflows"
+scope:
+  - .github/workflows/
+audit_log: 0. Info_Dev_Logs/Dev_Logs/ci-bot.log
+changelog_policy: "All automated commits must update CHANGELOG.md"
+security_reviewed: true
+security_reviewed_date: 2025-07-18
