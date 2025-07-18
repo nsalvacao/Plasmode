@@ -14,9 +14,10 @@
     "docs:check": "python scripts/check_docs.py"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
     "eslint": "^8.53.0",
-    "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-no-secrets": "^1.0.5",
+    "eslint-plugin-security": "^1.7.1",
     "globals": "^16.0.0",
     "jest": "^30.0.4",
     "semantic-release": "^21.0.7"

@@ -1,27 +1,27 @@
-import js from '@eslint/js';
-import pluginSecurity from 'eslint-plugin-security';
-import pluginNoSecrets from 'eslint-plugin-no-secrets';
-import globals from 'globals';
+const js = require('@eslint/js');
+const pluginSecurity = require('eslint-plugin-security');
+const pluginNoSecrets = require('eslint-plugin-no-secrets');
+const globals = require('globals');
 
-export default [
+module.exports = [
   js.configs.recommended,
   {
     plugins: {
       security: pluginSecurity,
-      'no-secrets': pluginNoSecrets
+      'no-secrets': pluginNoSecrets,
     },
     languageOptions: {
       ecmaVersion: 2022,
       globals: {
         ...globals.node,
         ...globals.jest,
-        MyGlobal: 'writable'
-      }
+        MyGlobal: 'writable',
+      },
     },
     rules: {
       'no-restricted-imports': ['error', { patterns: ['^/'] }],
       'no-secrets/no-secrets': 'error',
-      'require-jsdoc': 'error'
-    }
-  }
+      'require-jsdoc': 'error',
+    },
+  },
 ];
