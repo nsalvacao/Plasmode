@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: Apache-2.0
+name: Security Scan
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+
+jobs:
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Scan for secrets
+        uses: trufflesecurity/trufflehog@v3
+        with:
+          scanArguments: "--path ."

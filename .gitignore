@@ -1,32 +1,55 @@
-# Prerequisites
-*.d
+# SPDX-License-Identifier: Apache-2.0
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# OS artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
 
-# Precompiled Headers
-*.gch
-*.pch
+# VSCode
+.vscode/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Node
+node_modules/
+dist/
+coverage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Fortran module files
-*.mod
-*.smod
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.vs/
 
-# Executables
-*.exe
-*.out
-*.app
+# Rust
+/target/
+Cargo.lock
+
+# Tauri build
+/src-tauri/target/
+
+# macOS
+*.DS_Store
+
+# Windows
+*.lnk
+
+# Linux
+*~
+
+# IDEs
+.idea/
+
+# Others
+*.tmp
