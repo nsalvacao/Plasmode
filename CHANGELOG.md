@@ -80,3 +80,4 @@ All notable changes to this project will be documented in this file. This projec
 
 ---
 
+\n### AI/agent contribution
