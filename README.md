@@ -21,6 +21,8 @@ privacy: "public"
 > Build your environment. Extend your OS. Shape your workflow.
 
 ---
+[![Build](https://github.com/nsalvacao/plasmode/actions/workflows/ci.yml/badge.svg)](https://github.com/nsalvacao/plasmode/actions/workflows/ci.yml) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) [![Coverage Status](https://img.shields.io/coveralls/github/nsalvacao/plasmode.svg)](#) [![Code Style](https://img.shields.io/badge/code%20style-eslint-brightgreen.svg)](#) [![Contributors](https://img.shields.io/github/contributors/nsalvacao/plasmode.svg)](https://github.com/nsalvacao/plasmode/graphs/contributors)
+
 
 ## Table of Contents
 - [Overview](#overview)

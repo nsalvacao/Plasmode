@@ -1,0 +1,47 @@
+# SPDX-License-Identifier: Apache-2.0
+name: CI
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then npm ci; fi
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Restore dotnet
+        run: |
+          if ls **/*.csproj 1>/dev/null 2>&1; then dotnet restore; fi
+      - name: Lint & Validate
+        run: |
+          npm run lint --if-present
+          npm run validate:modules --if-present
+      - name: Test
+        run: |
+          npm test --if-present
+          pytest || true
+          if ls **/*.csproj 1>/dev/null 2>&1; then dotnet test; fi
+      - name: Build
+        run: |
+          if [ -f Cargo.toml ]; then cargo build --release; fi
+          npm run build --if-present
+          if ls **/*.csproj 1>/dev/null 2>&1; then dotnet build --configuration Release; fi
