@@ -1,2 +1,1 @@
-import eslintConfig from './.eslintrc.json' assert { type: 'json' };
-export default eslintConfig;
+module.exports = require('./.eslintrc.json');
