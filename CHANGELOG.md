@@ -28,6 +28,8 @@ All notable changes to this project will be documented in this file. This projec
 - [AI-Agent: ai.github.codex] Added linter configs, release automation, dependabot, onboarding docs and AI test templates (2025-07-18)
 - [AI-Agent: ai.github.codex] Added pylint and globals dependencies for linting (2025-07-18)
 - [AI-Agent: ai.github.codex] Added @semantic-release/changelog dev dependency (2025-07-18)
+- [AI-Agent: codex] Created Rust workspace and `engine` crate with Tauri boilerplate (2025-07-18)
+- [AI-Agent: codex] Removed binary icons and clarified Tauri dev commands in README (2025-07-18)
 
 ### Changed
 - [AI-Agent: ai.github.codex] Migrated ESLint to flat config and updated security workflow checkout (2025-07-18)
