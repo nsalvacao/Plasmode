@@ -1,3 +1,16 @@
+# 1.0.0 (2025-07-18)
+
+
+### Bug Fixes
+
+* **ci:** adjust TruffleHog args and ESLint config ([a8c19a3](https://github.com/nsalvacao/Plasmode/commit/a8c19a3011401a6efdcb9df69c29f83d3942e423))
+* **ci:** update workflows and config ([f2b05f8](https://github.com/nsalvacao/Plasmode/commit/f2b05f807c3577af3fbf85f53189afcd901c3371))
+
+
+### Features
+
+* bootstrap project structure and ci ([110ed1c](https://github.com/nsalvacao/Plasmode/commit/110ed1c00f029a219df7db6dc22f66d242709a26))
+
 ---
 title: "CHANGELOG – PLASMODE Universal Desktop Modules Platform"
 version: "v1.0"
