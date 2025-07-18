@@ -11,7 +11,7 @@
     "docs:check": "python scripts/check_docs.py"
   },
   "devDependencies": {
-    "eslint": "^8.53.0",
+    "eslint": "^9.31.0",
     "eslint-plugin-security": "^1.7.1",
     "eslint-plugin-no-secrets": "^1.0.5",
     "jest": "^30.0.4",
