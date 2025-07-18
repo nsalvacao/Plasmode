@@ -34,6 +34,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Fixed
 - [CI/CD-Agent: github-actions-bot] Workflow permissions and ESLint config adjustments (2025-07-18)
+- [CI/CD-Agent: github-actions-bot] Set full Git history in security workflow to prevent TruffleHog errors (2025-07-18)
 
 ---
 
