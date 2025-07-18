@@ -30,6 +30,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ### Changed
 - [AI-Agent: ai.github.codex] Migrated ESLint to flat config and updated security workflow checkout (2025-07-18)
+- [AI-Agent: ai.github.codex] Set Node.js version to 18.x in CI and enforced Node >=18 via package.json engines (2025-07-18)
 
 ### Fixed
 - [CI/CD-Agent: github-actions-bot] Workflow permissions and ESLint config adjustments (2025-07-18)
