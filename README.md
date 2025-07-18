@@ -136,7 +136,10 @@ PLASMODE is designed for seamless AI augmentation, automation, and agent integra
 - `git clone https://github.com/nsalvacao/plasmode.git`
 - `cd plasmode`
 - `npm install` (installs Node and Python dependencies for SDK)
-- `cargo tauri dev` (builds and runs the Tauri engine)
+- `cargo tauri dev` (start the engine with live reload)
+- `npx tauri dev` (same as above, works on any OS)
+- `cargo tauri build` (create a release build)
+- `cargo tauri build --bundles all` (package installers for Windows, macOS and Linux)
 
 ### 2. Create Your First Module
 - See [Module SDK & API Reference] for:
